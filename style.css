@@ -1,0 +1,149 @@
+@font-face {
+  font-family: mono;
+  src: url("font/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+} /* font for hero_text section */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+}
+
+.logo a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 2rem;
+  font-family: mono;
+}
+
+.menu {
+  float: right;
+}
+
+.header {
+  padding: 2rem;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  position: relative;
+  margin: 0 2rem;
+}
+
+.nav li a {
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.nav li a:hover {
+  color: #111;
+  transform: scale(1.2);
+  text-shadow: none;
+}
+
+.submenu {
+  position: absolute;
+  background: rgba(225, 225, 225, 0.1);
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  width: 13rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.submenu li {
+  display: block;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 0.5rem 1.5rem;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: mono;
+}
+
+.submenu li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav li:hover .submenu {
+  display: block;
+}
+
+.hero {
+  position: relative;
+}
+.hero_text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.hero_text h1 {
+  color: aliceblue;
+  font-family: mono;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero_text p {
+  color: aliceblue;
+  font-family: mono;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.button-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: mono, sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: rgba(110, 109, 112, 0.2);
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
+    0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: aliceblue;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-12:hover {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+    0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(76, 85, 105, 0.5);
+  outline: 0;
+  transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+}
